@@ -82,7 +82,9 @@
 							"dataSource": "This:C1470.name",
 							"footer": {
 								"name": "Footer2"
-							}
+							},
+							"enterable": false,
+							"verticalAlign": "middle"
 						}
 					]
 				},
