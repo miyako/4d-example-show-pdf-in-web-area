@@ -5,4 +5,5 @@
 
 WebエリアにPDFファイルを表示する
 
-![](https://github.com/miyako/4d-example-show-pdf-in-web-area/assets/1725068/f553975a-fe52-47ff-88c5-b7f980a38d81)
+
+![](https://github.com/miyako/4d-example-show-pdf-in-web-area/assets/1725068/fe699634-4b24-4155-96b4-d9b61c12c63d)
