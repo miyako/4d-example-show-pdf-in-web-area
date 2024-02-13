@@ -1,0 +1,118 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 622,
+	"windowMinHeight": 343,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"events": [
+		"onLoad",
+		"onUnload"
+	],
+	"windowTitle": "",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "ここにファイルをドロップ…",
+					"top": 13,
+					"left": 20,
+					"width": 170,
+					"height": 16
+				},
+				"Files": {
+					"type": "listbox",
+					"left": 20,
+					"top": 38,
+					"width": 243,
+					"height": 489,
+					"events": [
+						"onDrop",
+						"onDragOver",
+						"onSelectionChange"
+					],
+					"listboxType": "collection",
+					"staticColumnCount": 1,
+					"resizingMode": "legacy",
+					"sortable": false,
+					"rowHeight": "32px",
+					"dataSource": "Form:C1466.files.col",
+					"currentItemSource": "Form:C1466.files.item",
+					"currentItemPositionSource": "Form:C1466.files.pos",
+					"selectedItemsSource": "Form:C1466.files.sel",
+					"horizontalLineStroke": "transparent",
+					"verticalLineStroke": "transparent",
+					"alternateFill": "automaticAlternate",
+					"selectionMode": "single",
+					"method": "ObjectMethods/Files.4dm",
+					"sizingY": "grow",
+					"scrollbarHorizontal": "hidden",
+					"dropping": "custom",
+					"columns": [
+						{
+							"header": {
+								"text": "",
+								"name": "Header1"
+							},
+							"name": "Icon",
+							"footer": {
+								"name": "Footer1"
+							},
+							"enterable": false,
+							"dataSourceTypeHint": "picture",
+							"dataSource": "This:C1470.icon",
+							"pictureFormat": "proportionalCenter",
+							"width": 32
+						},
+						{
+							"header": {
+								"name": "Header2",
+								"text": "ファイル名"
+							},
+							"name": "Name",
+							"dataSource": "This:C1470.name",
+							"footer": {
+								"name": "Footer2"
+							}
+						}
+					]
+				},
+				"Preview": {
+					"type": "webArea",
+					"left": 295,
+					"top": 38,
+					"width": 492,
+					"height": 489,
+					"events": [
+						"onLoad",
+						"onEndURLLoading"
+					],
+					"method": "ObjectMethods/Preview.4dm",
+					"webEngine": "embedded",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				}
+			}
+		}
+	],
+	"method": "method.4dm",
+	"geometryStamp": 736,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"rightMargin": 20,
+	"bottomMargin": 20
+}
